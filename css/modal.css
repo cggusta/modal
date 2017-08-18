@@ -1,0 +1,165 @@
+html,body {
+	margin:0;
+	padding:0;
+}
+
+p {
+	font-size:16px;
+	font-style: bold;
+	font-family: arial, sans-serif;
+}
+
+/* YouTube */
+
+div.YouTube {
+	position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+div.YouTube iframe {
+position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#player {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#hiroYouTube {
+	background: #000;
+	width: 100%;
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	height: 0;
+}
+
+#hiroYouTubeModal {
+	background: #000;
+	z-index: 9999;
+	min-height: initial;
+	max-height: initial;
+	height: auto;
+}
+
+/*modal*/
+
+body.hiroModal-open {
+    overflow: hidden;
+}
+
+.hiroModalLink{
+	cursor: pointer;
+}
+
+#hiroBlocker{
+	background: rgba(0,0,0,0.75);
+	display: none;
+	position: fixed;
+	top: 0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+}
+
+.hiroModal > img {
+	display: block;
+	width: 100%;
+}
+
+.hiroModal{
+	display: none;
+	position: fixed;
+	background: white;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	opacity:1;
+	width: 90%;
+	max-width: 800px;
+	padding: 25px;
+	box-sizing: border-box;
+	z-index: 9999;
+	min-height:450px;
+	height: 30%;
+	max-height: 600px;
+}
+
+.hiroModalContentWrapper{
+	overflow-y: scroll;
+	height: 100%;
+	padding: 0 5% 0 0;
+}
+
+
+.addedToModal{
+	-webkit-overflow-scrolling: touch;
+}
+
+.hiroModalClose{
+	color:white;
+	line-height: 0;
+	font-size:2em;
+	cursor: pointer;
+	padding:3px;
+	margin-top:-25px;
+	position: absolute;
+	z-index: 9999;
+	top:0;right:0;
+	text-align: right;
+	opacity: 1;
+  	transition: opacity 0.3s;
+
+}
+
+.reverseOutClose {
+  color: white !important;
+}
+.hiroModalClose:hover {
+  opacity: .75;
+}
+
+.iframeWrapper{
+	width: 100%;
+	height: 100%;
+	border: none;
+	display: block;
+	overflow: auto;
+	position: relative;
+	-webkit-overflow-scrolling: touch;
+}
+
+.iframeWrapper > iframe {
+	width: 100%;
+	display: block;
+	border: none;
+	height: 100%;
+	background: #fff;
+}
+
+/*iframe*/
+#hiroModalFrame > iframe {
+	width: 100%;
+	display: block;
+	border: none;
+	height: 100%;
+	background: #fff;
+}
+
+.textLink {
+	text-decoration: underline;
+	color:#333;
+}
